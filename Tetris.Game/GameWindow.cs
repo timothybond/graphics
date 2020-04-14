@@ -1,14 +1,15 @@
-﻿using System;
-using OpenTK;
+﻿using OpenTK;
 using OpenTK.Graphics;
 using OpenTK.Graphics.OpenGL;
 using OpenTK.Input;
+using System;
+using Tetris.Logic;
 
-namespace Graphics
+namespace Tetris.Game
 {
     public class GameWindow : OpenTK.GameWindow
     {
-        Texture sadFaceTexture;
+        private readonly Board board = new Board(10, 20);
 
         public GameWindow() :
             base(
@@ -33,9 +34,6 @@ namespace Graphics
             GL.DepthFunc(DepthFunction.Lequal);
 
             GL.Enable(EnableCap.Texture2D);
-
-            this.sadFaceTexture = Content.LoadTexture("D:/Dev/sadface.png");
-            this.sadFaceTexture = Content.LoadTexture("D:/Dev/sadface.png");
         }
 
         protected override void OnResize(EventArgs e)
@@ -50,7 +48,7 @@ namespace Graphics
 
         protected override void OnUpdateFrame(FrameEventArgs e)
         {
-            
+
         }
 
         protected override void OnRenderFrame(FrameEventArgs e)
@@ -78,10 +76,7 @@ namespace Graphics
             GL.Vertex2(200, 500);
 
             GL.End();
-
-            // Draw the texture
-            GL.BindTexture(TextureTarget.Texture2D, this.sadFaceTexture.Id);
-
+            
             GL.Begin(PrimitiveType.Triangles);
 
             GL.Color4(1.0, 1.0, 1.0, 1.0);

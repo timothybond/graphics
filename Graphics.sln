@@ -7,6 +7,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphics", "Graphics\Graphi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphics.Sandbox", "Graphics.Sandbox\Graphics.Sandbox.csproj", "{DBDDC5EA-3F07-48A7-9161-23036D1A2B49}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tetris.Logic", "Tetris.Logic\Tetris.Logic.csproj", "{BC3D5789-4DF5-414A-B10E-A2C4B53BB18B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tetris", "Tetris", "{49FF3252-E21D-475F-AF11-D5F8929AEAE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tetris.Graphics", "Tetris.Graphics\Tetris.Graphics.csproj", "{8DF8C929-45DE-411F-A1A9-2F3C1BCD12C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0F24E7BC-D8F3-487B-A0B2-4066694D21C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tetris.Logic.Tests", "Tetris.Logic.Tests\Tetris.Logic.Tests.csproj", "{64217B26-80E1-4BDB-9310-20DD1538E203}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tetris.Game", "Tetris.Game\Tetris.Game.csproj", "{921B7859-EACB-44B7-ABC4-6B248BF38226}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +33,32 @@ Global
 		{DBDDC5EA-3F07-48A7-9161-23036D1A2B49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBDDC5EA-3F07-48A7-9161-23036D1A2B49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBDDC5EA-3F07-48A7-9161-23036D1A2B49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC3D5789-4DF5-414A-B10E-A2C4B53BB18B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC3D5789-4DF5-414A-B10E-A2C4B53BB18B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC3D5789-4DF5-414A-B10E-A2C4B53BB18B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC3D5789-4DF5-414A-B10E-A2C4B53BB18B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DF8C929-45DE-411F-A1A9-2F3C1BCD12C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DF8C929-45DE-411F-A1A9-2F3C1BCD12C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DF8C929-45DE-411F-A1A9-2F3C1BCD12C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DF8C929-45DE-411F-A1A9-2F3C1BCD12C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64217B26-80E1-4BDB-9310-20DD1538E203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64217B26-80E1-4BDB-9310-20DD1538E203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64217B26-80E1-4BDB-9310-20DD1538E203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64217B26-80E1-4BDB-9310-20DD1538E203}.Release|Any CPU.Build.0 = Release|Any CPU
+		{921B7859-EACB-44B7-ABC4-6B248BF38226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{921B7859-EACB-44B7-ABC4-6B248BF38226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{921B7859-EACB-44B7-ABC4-6B248BF38226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{921B7859-EACB-44B7-ABC4-6B248BF38226}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BC3D5789-4DF5-414A-B10E-A2C4B53BB18B} = {49FF3252-E21D-475F-AF11-D5F8929AEAE0}
+		{8DF8C929-45DE-411F-A1A9-2F3C1BCD12C0} = {49FF3252-E21D-475F-AF11-D5F8929AEAE0}
+		{0F24E7BC-D8F3-487B-A0B2-4066694D21C6} = {49FF3252-E21D-475F-AF11-D5F8929AEAE0}
+		{64217B26-80E1-4BDB-9310-20DD1538E203} = {0F24E7BC-D8F3-487B-A0B2-4066694D21C6}
+		{921B7859-EACB-44B7-ABC4-6B248BF38226} = {49FF3252-E21D-475F-AF11-D5F8929AEAE0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AF1D1DB6-66F7-43EB-891D-2A33C4CF0F0C}
